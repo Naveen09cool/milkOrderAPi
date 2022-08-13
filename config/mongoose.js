@@ -1,9 +1,9 @@
 // require the library
 const mongoose = require('mongoose');
 
-// require('dotenv').config();
+require('dotenv').config();
 // connecting database
-mongoose.connect('mongodb://localhost/MilkOrder_db');
+mongoose.connect(process.env.MONGO_CONNECT||'mongodb://localhost/MilkOrder_db');
 // aquire the connection
 const db = mongoose.connection;
 //on error
