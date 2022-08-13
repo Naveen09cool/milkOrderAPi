@@ -3,7 +3,7 @@ const router = express.Router();
 const orderController = require('../controllers/order_controller');
 
 // For Home
-// router.get('/', orderController.home);
+router.get('/', orderController.home);
 
 // API to add order to the database
 router.post('/add', orderController.add);

@@ -1,5 +1,19 @@
 const Order = require('../models/order');
 
+module.exports.home = async function(req, res){
+    try{
+        return res.status(200).json({
+            data:{
+                message: "Welcome to MIlk PRODUCTS API",
+            }
+        })
+    }catch(err){
+        return res.send('Error in LOADING home'+ err);
+    } 
+}
+
+
+
 // Add Order
 module.exports.add = async function(req, res){
     try{
