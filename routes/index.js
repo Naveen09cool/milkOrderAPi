@@ -15,10 +15,10 @@ router.post('/update/:id/', orderController.update);
 router.post('/updateStatus/:id/', orderController.updateStatus);
 
 // API to delete order
-router.delete('/delete/:id', orderController.delete);
+router.delete('/delete/:id/', orderController.delete);
 
 // API to check order capacity for a particular day
-router.post('/checkCapacity/:date', orderController.checkCapacity);
+router.post('/checkCapacity/:date/', orderController.checkCapacity);
 
 
 // Exporting router
