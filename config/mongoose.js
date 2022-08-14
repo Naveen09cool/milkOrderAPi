@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 require('dotenv').config();
 // connecting database
-mongoose.connect(process.env.MONGO_CONNECT||'mongodb://localhost/MilkOrder_db');
+mongoose.connect(process.env.MONGO_CONNECT);
 // aquire the connection
 const db = mongoose.connection;
 //on error
